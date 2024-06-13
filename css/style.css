@@ -10,6 +10,56 @@
     margin:0 auto
 }
 
+footer{
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+main{
+    height: calc(100vh - 100px);
+    background-color: black
+}
+
+img{
+    width: 100%;
+    display: inline;
+}
+
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.my-col{
+    width: calc((100% / 7) - 14px);
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    
+    margin-bottom: 5px;
+    
+    
+    
+}
+
+
+
+.microphone, .pinco{
+    color: white;
+    background-color: rgba(0, 0, 0.5);
+    margin: 3px;
+    padding: 10px;
+    
+}
+
+.microphone{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .foot-bar{
     background-color: #222222;
     display: flex;
@@ -47,7 +97,7 @@
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
-    font-size: 0.90rem;
+    font-size: 0.75rem;
     cursor: pointer; 
     border-radius: 4px; 
      
@@ -55,7 +105,27 @@
 .control-special{
     color: green;
     background-color: #222222;
+    border: none;
+    margin-right: 10px;
+    
 }
+
+.control-special p {
+    color: white;
+    
+}
+
+.freccia{
+    color: white;
+}
+
+.audio, .video, .invite-member{
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 
 
