@@ -5,89 +5,126 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow: hidden;
+}
+
 .container{
-    max-width: 1000px;
-    margin:0 auto
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 90vh;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.contenitore{
+    width: 100vw;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 footer{
-    height: 100px;
-    position: fixed;
-    width: 100%;
-    background-color: black;
+    width: 100vw;
+    height: 10vh;  
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 10;
+    overflow-x: hidden;
 }
 
-main{
-    height: calc(100vh - 100px);
-    background-color: black
-}
 
 img{
-    width: 100%;
-    display: inline;
+    max-width: 100%;
+    display: block;
 }
 
 .my-row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin-right: -10px;
+    margin-left: -10px ;
+    
 }
 
 .my-col{
-    width: calc((100% / 7) - 14px);
-    background-color: blanchedalmond;
-    border: 2px solid black;
-    
+    width: calc((100% / 7) - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 5px;
-    
-    
-    
+    position: relative;
 }
 
-
-
-.microphone, .pinco{
-    color: white;
-    background-color: rgba(0, 0, 0.5);
-    margin: 3px;
-    padding: 10px;
-    
+.back{
+    background-color: black;
+    position: relative;
 }
 
-.microphone{
+.ultimo-tag{
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    right: 20px;
+    color: white;
 }
+
+.tag-speciale{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.microphone, .pinco, i{
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+    
+    
+    
+}
+
+.cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+
+
+
+
 
 .foot-bar{
-    background-color: #222222;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
     
 }
 
-.end{
-    background-color:#4A4A4A;
-    width: 100px;
-    height: 48px;
-    text-align: center;
-    
-}
+
 
 .dx>*{
     color: red;
 }
 
-.sx{
+.sx, .center{
     display: flex;
 
 }
 
-.center{
-    display: flex;
-}
+
+    
+
 
 .control{
     background-color: #222222;
