@@ -4,3 +4,68 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    max-width: 1000px;
+    margin:0 auto
+}
+
+.foot-bar{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.end{
+    background-color:#4A4A4A;
+    width: 100px;
+    height: 48px;
+    text-align: center;
+    
+}
+
+.dx>*{
+    color: red;
+}
+
+.sx{
+    display: flex;
+
+}
+
+.center{
+    display: flex;
+}
+
+.control{
+    background-color: #222222;
+    border: none; 
+    color: white; 
+    padding: 5px 10px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 0.90rem;
+    cursor: pointer; 
+    border-radius: 4px; 
+     
+}
+.control-special{
+    color: green;
+    background-color: #222222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
